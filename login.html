@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- ----Font Awesome----- -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- ----Google Fonts----- -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope|Montserrat|Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------css--------- -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <style>
+      body {
+        background-color: #2af070;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%232af070' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%2324e86e' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%231fe06d' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%231ad86b' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2315d069' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2311c867' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%230ec065' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%230bb863' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2309b060' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%2309a85e' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2309a15b' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%230a9958' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%230c9156' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%230e8a53' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23108250' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23127b4d' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23137349' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23156c46' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <title>LogIn</title>
+  </head>
+  <body>
+    <div class="container loginpage-container">
+      <img src="images/logo.png" height="80" width="200" id="logo" />
+      <div class="row">
+        <div class="col-md-7 login-right">
+          <img src="images/login.svg" />
+        </div>
+        <div class="col-md-5 login-left">
+          <h2>Hello :)</h2>
+          <p class="text-muted mb-5">
+            do the signup to your career with your personal information by email
+            address and password
+          </p>
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fas fa-envelope"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Email"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <div class="input-group mb-4">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fas fa-key"></i
+              ></span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </div>
+          <input
+            type="checkbox"
+            value="lsRememberMe"
+            id="rememberMe"
+            class="mb-4"
+          />
+          <label for="rememberMe">Remember me</label>
+          <p class="text-right text-muted fp">forgot password?</p>
+          <button type="button" class="btn btn-success login-btn">LogIn</button>
+          <button type="button" class="btn btn-success login-btn ml-3">
+            SignUp
+          </button>
+          <p class="text-muted mt-5 mt-md-2">
+            or you can join with
+          </p>
+
+          <ul class="socialmedia-join-ul">
+            <li>
+              <img src="images/google.png" alt="" height="33" width="33" />
+            </li>
+            <li><img src="images/fb.png" alt="" height="28" width="28" /></li>
+            <li><img src="images/tt.png" alt="" height="45" width="45" /></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
