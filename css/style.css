@@ -1250,7 +1250,7 @@ h1 {
       rgba(0, 0, 0, 0.7) 40%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url('./images/teamudan-cover.jpg');
+    url('../images/teamudan-cover.jpg');
   height: 50vh;
   background-position: center;
   background-size: cover;
