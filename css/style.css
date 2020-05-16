@@ -45,13 +45,6 @@ a {
   color: var(--primary-color);
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 60px;
-  line-height: 1.2;
-  margin-bottom: 15px;
-}
-
 .showcase {
   height: 100vh;
   display: flex;
@@ -180,7 +173,7 @@ h1 {
 .bottom-navbar-cf {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 98%;
   transition: all 1s ease;
   position: fixed;
   top: 0;
@@ -327,6 +320,7 @@ h1 {
   color: #fff;
 }
 /* -- --------team-cards-------- -- */
+/* --from home it is deleted but used in other places */
 .ourTeam-cf {
   padding: 80px 50px;
   text-align: center;
@@ -559,6 +553,12 @@ h1 {
 .gallery-cf .full-gallery-section {
   width: 80%;
   margin: auto;
+}
+.gallery-cf .full-gallery-section .filter-option {
+  width: 150px;
+  padding: 5px 10px;
+  background-color: #0ec667;
+  color: #fff;
 }
 .gallery-cf .full-gallery-section .button-group {
   margin: 50px 0 25px 0;
@@ -1250,7 +1250,7 @@ h1 {
       rgba(0, 0, 0, 0.7) 40%,
       rgba(0, 0, 0, 0.1) 100%
     ),
-    url('./images/teamudan-cover.jpg');
+    url('/images/teamudan-cover.jpg');
   height: 50vh;
   background-position: center;
   background-size: cover;
@@ -1300,20 +1300,54 @@ h1 {
 }
 /* ---------------CSS FOR TEAM PAGES END----------------------- */
 /* ---------------CSS FOR ABOUT US START------------------ */
-.about-container {
-  padding: 80px 50px;
+.about-cf {
+  padding: 0px;
 }
-.about-container section {
-  margin-bottom: 50px;
+.about-cf section {
+  padding: 50px;
 }
-.about-container section h2 {
+.about-cf section h2 {
   color: #0ec667;
 }
-.about-container section p {
+.about-cf section p {
   font-size: 1.2em;
+  line-height: 2;
 }
-.about-container section img {
+.about-cf .intro-logo-section {
+  background-color: #f0f7f7;
+}
+.about-cf .intro-logo-section img {
+  height: 400px;
+  width: 80%;
+  margin: auto;
+}
+.about-cf .about-us-section {
+  background-color: #dfeeee;
+}
+.about-cf .mission-vission {
+  background-color: #f0f7f7;
+}
+.about-cf #vission-section {
+  background-color: #dfeeee;
+}
+.about-cf .mission-vission img {
+  height: 300px;
+}
+.about-cf .mission-vission #vission-img {
+  height: 400px;
+}
+.about-cf section ol {
+  font-size: 1.2em;
+  line-height: 3;
+  list-style-position: inside;
+}
+.about-cf section img {
   width: 100%;
+}
+.about-footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 15px;
 }
 /* ---------------CSS FOR ABOUT US END------------------ */
 
@@ -1330,59 +1364,53 @@ h1 {
   /* landing page */
   .landing-page-cf {
     height: 100vh;
+    border: 8px solid white;
+    padding: 0 0 5px 0;
+  }
+  .showcase {
+    padding: 0 5px;
+  }
+
+  .center-div {
     width: 100%;
   }
-  .center-div {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .center-div h1 {
+    font-size: 2.5em;
+    letter-spacing: 2px;
   }
-  .word {
-    perspective: 1000px;
-  }
-
-  .word span {
-    font-size: 60px;
-  }
-
   .center-div h2 {
-    margin: 30px auto 15px auto;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    margin: 25px auto 10px auto;
   }
   .center-div .btn {
-    font-size: 1.15em;
-    letter-spacing: 0.1em;
-    padding: 0.5em 3em;
-    margin-top: 20px;
+    width: 50%;
+    font-size: 20px;
   }
   .sideNav-bar {
-    position: absolute;
-    top: 3%;
-    left: 50%;
-    margin-left: -130px;
-    transform: rotate(0deg);
-    width: auto;
-    font-size: 12px;
-    overflow-x: hidden;
-  }
-  .landing-socialMedia-ul {
-    right: 0%;
-    bottom: 0%;
-  }
-  .landing-socialMedia-ul li {
-    padding: 10px;
-  }
-  .bottom-navbar-cf {
-    padding: 0;
-  }
-  .bottom-navbar {
-    height: auto;
-  }
-  .navbar-brand img {
     display: none;
   }
-  .navbar-toggler {
-    margin-top: 2px;
+  .landing-socialMedia-ul li {
+    padding: 8px;
+  }
+  /* the top nav bar */
+  .bottom-navbar-cf {
+    width: 95.5%;
+  }
+  .custom-tranparent {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .custom-tranparent .navbar-toggler {
+    color: #fff;
+  }
+  .navbar-toggler:focus {
+    outline: none !important;
+  }
+  .custom-tranparent a {
+    color: #000;
+  }
+  #bottom-navbar-logo {
+    height: 50px;
+    width: 130px;
   }
   /*------------- mission----------------------- */
   .mission-cf {
@@ -1398,20 +1426,6 @@ h1 {
     .mission-content
     .mission-mob-instruction {
     opacity: 1;
-  }
-
-  /* -- --------team--------- -- */
-  .ourTeam-cf {
-    padding: 50px 10px;
-  }
-  .ourTeam-cf .row {
-    padding: 10px;
-  }
-  .ourTeam-col {
-    margin-top: 25px;
-  }
-  .founder-card {
-    width: 100%;
   }
   /* --------fixed join us---------- */
   .fixed-join-div {
@@ -1443,7 +1457,8 @@ h1 {
   .flip-card {
     width: 100%;
     height: 220px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding: 8px;
   }
   .flip-card-front,
   .flip-card-back {
@@ -1451,14 +1466,24 @@ h1 {
     padding: 30px 0;
     border-radius: 15px;
   }
-  /* developers */
-  .developer-container {
+  /* --------MEDIA QUERY FOR MAIN PAGE GALLERY SECTION START--------- -- */
+  .gallery-cf .section-description {
+    width: 90%;
+    margin: auto;
+  }
+  .gallery-cf .button-group {
     width: 100%;
   }
-  .developer-container p {
-    font-size: 1em;
+  .gallery-cf .button-group button {
+    background: #f5f5f5;
+    padding: 5px 15px;
+    margin-bottom: 5px;
   }
-  /* -- -------gallery--------- -- */
+  .gallery-cf .button-group button:focus {
+    outline: none;
+  }
+  /* --------MEDIA QUERY FOR MAIN PAGE GALLERY SECTION END--------- -- */
+  /* --------MEDIA QUERY FOR ALL GALLERY SECTION--------- -- */
   .gallery-cf {
     padding: 50px 5px;
   }
@@ -1490,7 +1515,7 @@ h1 {
   }
   .tile {
     width: 100%;
-    margin-right: 10px;
+    margin-right: 40px;
   }
   /* ------BLOGS--------- */
   .blog-cf {
@@ -1498,6 +1523,7 @@ h1 {
   }
   .blog-cf .container {
     flex-direction: row;
+    padding: 0;
   }
   .blog-cf .gallery {
     width: 100%;
@@ -1515,6 +1541,20 @@ h1 {
   }
   .blog-cf .viewall-btn {
     width: 80%;
+  }
+  /* -------MEDIA QUERY FOR JOIN SECTION */
+  .join-cf {
+    padding: 50px 10px;
+  }
+  .join-container .join-row .join-left img {
+    height: 150px;
+  }
+  .join-container .join-row .join-right h2 {
+    margin: 70px auto 50px auto;
+    font-size: 2em;
+  }
+  .join-container .join-row .join-right .btn {
+    width: 40%;
   }
   /* -----footer------- */
 
@@ -1553,13 +1593,22 @@ h1 {
   .student-profile-cf .profile-right {
     text-align: center;
   }
+  .student-profile-cf .profile-right .student-bio {
+    margin: 30px auto;
+    width: 100%;
+  }
   .student-profile-cf .profile-img {
     height: 300px;
     width: 250px;
   }
   /* ----project--- */
-  .student-project-cf {
-    padding: 50px;
+  .student-project-cf,
+  .studentprofile-blogs-cf {
+    padding: 30px 10px;
+  }
+  .student-project-cf .project-row .blog-post-col .card,
+  .studentprofile-blogs-cf .project-row .blog-post-col .card {
+    margin: 20px auto;
   }
   .student-project-cf .blog-post-btn {
     width: 100%;
@@ -1570,7 +1619,9 @@ h1 {
   /* --------MEDIA QUERY FOR STUDENT PROFILE END------------ */
   /* --------MEDIA QUERY FOR LOGIN PAGE START------------ */
   .loginpage-container {
-    padding: 80px 60px 30px 60px;
+    margin-top: 0;
+    border-radius: 0%;
+    padding: 80px 20px 30px 20px;
   }
   .loginpage-container .login-left h2 {
     font-size: 2.5em;
@@ -1592,11 +1643,11 @@ h1 {
   .blogpage-cf {
     padding: 50px 10px;
   }
-  .blog-container .card {
+  .blog-container .card,
+  .blog-container .blog-col {
     margin: auto;
     margin-bottom: 15px;
   }
-
   .blog-post-profileimg {
     margin-left: 40px;
   }
@@ -1627,4 +1678,87 @@ h1 {
     color: #0ec967;
   }
   /* --------MEDIA QUERY FOR MENTOR PAGE END------------ */
+  /* --------MEDIA QUERY FOR TECH-TEAMS START------------ */
+  .team-intro-cf {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url('/images/teamudan-cover.jpg');
+  }
+  .team-intro-cf .center-div {
+    left: 50%;
+  }
+  .team-container {
+    padding: 80px 15px;
+  }
+  .team-container img {
+    height: 180px;
+  }
+  .team-container h3 {
+    font-size: 1.6em;
+  }
+  .team-container .team-efficiency .efficiency-status {
+    padding: 30px 10px;
+    margin: 20px 0;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
+  .team-container .team-efficiency .progress {
+    height: 30px;
+    margin-bottom: 30px;
+  }
+  /* --------MEDIA QUERY FOR TECH-TEAMS END------------ */
+  /* --------MEDIA QUERY FOR ALUMNI-PAGE START------------ */
+  .subpage-intro-cf img {
+    width: 30%;
+  }
+  .alumnipage-container {
+    padding: 50px 15px;
+  }
+  .alumnipage-row {
+    margin-top: 50px;
+  }
+
+  .alumnipage-container .card {
+    margin: 20px auto;
+  }
+
+  /* for different batches of alumni */
+  .alumnicard-cf {
+    padding: 50px 15px;
+  }
+  .alumnicard-cf .list-group-item {
+    background-color: #e9edf0 !important;
+  }
+  .alumnicard-cf .ourTeam-col {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  /* --------MEDIA QUERY FOR ALUMNI PAGE END------------ */
+  /* ---------MEDIA QUERY FOR ABOUT US START------------------ */
+
+  .about-cf section p {
+    line-height: 1.8;
+    font-size: 1.1em;
+  }
+  .about-cf section {
+    padding: 50px 15px;
+  }
+  .about-cf .intro-logo-section img {
+    height: 200px;
+    width: 100%;
+  }
+  .about-cf .mission-vission img {
+    height: 300px;
+  }
+  .about-cf .mission-vission #vission-img {
+    margin-bottom: 20px;
+  }
+  .about-cf section ol {
+    line-height: 2;
+    font-size: 1.1em;
+  }
+  #aboutus-lastlogo {
+    height: 100px;
+  }
+  /* --------MEDIA QUERY FOR ABOUT US END------------------ */
 }
